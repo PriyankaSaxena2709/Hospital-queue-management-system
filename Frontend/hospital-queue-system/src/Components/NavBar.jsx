@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-100 shadow-md">
+    <nav className="bg-gray-200 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -24,13 +24,13 @@ const Navbar = () => {
               alt="Logo"
               className="h-10 w-auto mr-4"
             /> */}
-            <span className="text-xl font-bold text-blue-800">MediQueue</span>
+            <span className="text-xl font-bold text-cyan-800">MediQueue</span>
           </div>
 
           {/* Nav Links */}
           <div className="flex items-center space-x-6">
-            <Link to="/" className="text-blue-900 hover:text-blue-600 font-medium">Home</Link>
-            <Link to="/department" className="text-blue-900 hover:text-blue-600 font-medium">Department</Link>
+            <Link to="/" className="text-cyan-800 hover:text-blue-600 font-bold">Home</Link>
+            <Link to="/department" className="text-cyan-800 hover:text-blue-600 font-bold">Department</Link>
 
             {!isLoggedIn ? (
               <>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className="relative">
                   <button
                     onClick={() => setShowLoginMenu(!showLoginMenu)}
-                    className="bg-blue-900 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition"
+                    className="bg-cyan-700 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition"
                   >
                     Login
                   </button>
@@ -54,7 +54,7 @@ const Navbar = () => {
                 <div className="relative">
                   <button
                     onClick={() => setShowRegisterMenu(!showRegisterMenu)}
-                    className="bg-blue-900 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition"
+                    className="bg-cyan-700 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition"
                   >
                     Register
                   </button>

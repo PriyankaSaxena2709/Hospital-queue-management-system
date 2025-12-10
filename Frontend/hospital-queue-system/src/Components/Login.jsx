@@ -48,9 +48,9 @@ const Login=()=>{
     }
     
     return(
-     <div className="min-h-screen flex justify-center py-10">
-        <div className="w-[500px] h-[500px] p-10 rounded-lg shadow-lg bg-blue-200">
-            <h2 className=" text-[35px] py-2 mb-4 font-semibold text-gray-500 flex justify-center">Login</h2>
+     <div className="bg-cyan-700 min-h-screen flex justify-center py-10">
+        <div className="w-[500px] h-[500px] p-10 rounded-lg shadow-lg bg-white">
+            <h2 className=" text-[35px] py-2 mb-4 font-semibold text-cyan-800 flex justify-center">Login</h2>
             <form className="space-y-5" onSubmit={handleSubmit}>
             <input 
             type="text"
@@ -58,7 +58,7 @@ const Login=()=>{
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full bg-white px-4 py-4 rounded-md font-bold"
+            className="w-full bg-white px-4 py-4 rounded-md font-bold "
             />
             <input 
              type="password"
@@ -69,7 +69,7 @@ const Login=()=>{
              className="w-full bg-white px-4 py-4 rounded-md font-bold"
              
             />
-            <button className= "w-full flex justify-center bg-blue-900 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+            <button className= "w-full flex justify-center bg-cyan-700 text-gray-900 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition">
               Submit
             </button>
 
@@ -83,7 +83,7 @@ const Login=()=>{
             <option value="patient">Patient</option>
             <option value="doctor">Doctor</option>
             </select> */}
-            <h4 className="text-[20px] w-full flex justify-center font-semibold text-gray-600">Don't have an account? <NavLink to="/register/patient">Register</NavLink></h4>
+            <h4 className="text-[20px] w-full flex justify-center font-semibold text-white">Don't have an account? <NavLink to="/register/patient">Register</NavLink></h4>
           </form>
         </div>
      </div>
